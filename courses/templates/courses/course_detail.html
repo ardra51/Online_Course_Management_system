@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    {% load static %}
+
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+    <title>{{ course.title }}</title>
+</head>
+
+<body>
+
+    <div class="course-detail-card">
+
+        <!-- Course Title -->
+        <h1>{{ course.title }}</h1>
+
+        <!-- Course Description -->
+        <p>{{ course.description }}</p>
+
+        <!-- Instructor -->
+        <p>Instructor: {{ course.instructor }}</p>
+
+        <!-- Price -->
+        <p>Price: {{ course.price }}</p>
+
+        <!-- Course Image -->
+        {% if course.image %}
+            <img src="{{ course.image.url }}"
+                 alt="{{ course.title }}">
+        {% endif %}
+
+        <!-- Enrollment Status -->
+        {% if is_enrolled %}
+            <span class="enrolled-status">Already Enrolled</span>
+        {% else %}
+            <form method="POST" action="{% url 'enroll_course' course.id %}">
+                {% csrf_token %}
+                <button type="submit">Enroll in this Course</button>
+            </form>
+        {% endif %}
+
+        <!-- Back to Home -->
+        <a href="{% url 'course_list' %}">Back to Home</a>
+
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,340 @@
+body {
+    background-color: #f0f4f8;
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+h1 {
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 32px;
+}
+
+h2 {
+    color: #34495e;
+    text-align: center;
+}
+
+h3 {
+    color: #2980b9;
+     margin-bottom: 12px;
+}
+
+p {
+    color: #555555;
+    font-size: 16px;
+    margin: 8px 0;
+    line-height: 1.5;
+}
+
+hr {
+    border:none;
+    border-top:1px solid #dcdcdc;
+    margin:20px 0;
+}
+
+a {
+    display: inline-block;
+    background-color: #2980b9;
+    color: white;
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+}
+
+a:hover {
+    background-color: #1f618d;
+}
+
+button {
+    background-color: #e74c3c;
+    color: white;
+    padding: 10px 18px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #c0392b;
+}
+
+img {
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.course-card {
+    background-color: white;
+    padding: 20px;
+    width: 100%;
+    max-width: 380px;
+    min-height: 480px;
+    margin: 0 auto;
+    border-radius: 12px;
+    text-align: left;
+    border: 1px solid #eeeeee;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.course-card:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    transform: translateY(-3px);
+}
+
+/* course detail page styling */
+
+h1 {
+    color: #2c3e50;
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 25px;
+}
+
+/* Course details text */
+
+p {
+    color: #555555;
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 12px 0;
+}
+
+/* Course detail image */
+
+.course-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto 15px;
+    border-radius: 10px;
+}
+
+/* Login form styling */
+
+form {
+    background-color: white;
+    max-width: 400px;
+    margin: 30px auto;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Login input boxes */
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+/* Login form labels */
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #34495e;
+    font-weight: bold;
+}
+
+/* Login error message */
+
+.error-message {
+    color: red;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+/* Navbar styling */
+
+.navbar {
+    background-color: #2c3e50;
+    padding: 15px 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 8px;
+    margin-bottom: 25px;
+}
+
+.navbar h2 {
+    color: white;
+    margin: 0;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.nav-links a {
+    background-color: transparent;
+    color: white;
+    padding: 8px 12px;
+}
+
+.nav-links a:hover {
+    background-color: #34495e;
+}
+
+.navbar form {
+    margin: 0;
+    padding: 0;
+    background: none;
+    box-shadow: none;
+}
+
+.navbar button {
+    background-color: #e74c3c;
+}
+
+/* Enrolled Status Styling */
+
+.enrolled-status {
+    display: inline-block;
+    background-color: #d4edda;
+    color: #155724;
+    padding: 6px 12px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.not-enrolled-status {
+    display: inline-block;
+    background-color: #fff3cd;
+    color: #856404;
+    padding: 6px 12px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* Course Grid Layout */
+
+.course-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 10px;
+}
+
+
+.course-card a {
+    padding: 10px 16px;
+    border-radius: 6px;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.course-card a:hover {
+    background-color: #1f618d;
+}
+
+/* My Courses page styling */
+
+.course-grid .course-card {
+    border-top: 4px solid #2980b9;
+}
+
+.course-grid .course-card h2 {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.course-grid .course-card p {
+    margin-bottom: 15px;
+}
+
+/* My Courses heading only */
+
+.my-courses-heading {
+    text-decoration: underline;
+    text-decoration-color: #2980b9;
+    text-decoration-thickness: 4px;
+    text-underline-offset: 12px;
+}
+
+
+.course-grid .course-card p:nth-of-type(2) {
+    border-top: 1px solid #dce3eb;
+    padding-top: 15px;
+    margin-top: 20px;
+}
+
+/* Course Detail Page Styling */
+
+.course-detail-card {
+    background-color: white;
+    max-width: 750px;
+    margin: 50px auto;
+    padding: 35px;
+    border-radius: 15px;
+    border-top: 5px solid #2980b9;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.course-detail-card h1 {
+    color: #2c3e50;
+    margin-bottom: 25px;
+}
+
+.course-detail-card p {
+    text-align: left;
+    margin: 15px 0;
+}
+
+.course-detail-card img {
+    width: 300px;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 25px auto;
+    border-radius: 10px;
+}
+
+/* Login Page Styling */
+
+body:has(form input[name="username"]) {
+    text-align: center;
+}
+
+body:has(form input[name="username"]) form {
+    text-align: left;
+    border-top: 5px solid #2980b9;
+}
+
+body:has(form input[name="username"]) button {
+    width: 100%;
+}
+
+/* Register Page Styling */
+
+body:has(form input[name="username"]) form {
+    border-top: 5px solid #27ae60;
+}
+
+body:has(form input[name="username"]) button {
+    width: 100%;
+}
